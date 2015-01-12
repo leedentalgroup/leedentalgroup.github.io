@@ -1,0 +1,39 @@
+body {
+  /* background color is called "Lake Michigan :)" */
+  background-color: #50A6C2 !important;
+  -moz-box-shadow: inset 0 0 10px #333;
+  -webkit-box-shadow: inset 0 0 10px #333;
+  box-shadow: inset 0 0 10px #333;
+  font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+  -moz-box-shadow: 0 0 3px #333;
+  -webkit-box-shadow: 0 0 3px #333;
+  box-shadow: 0 0 3px #333;
+  font-family: 'Roboto Slab', serif !important;
+}
+
+.brand-logo {
+  max-height: 37px;
+  max-width: 37px;
+  padding: 0 !important;
+  margin: -5px -10px 0 0 !important;
+  opacity: 0.7 !important;
+}
+
+div#clinic-scroll h1 {
+  position: relative;
+  z-index: 1;
+  padding: 100px 20px;
+}
+
+img.clinic-img {
+  position: relative;
+  z-index: -10;
+  max-width: 1140px;
+  /*max-width: 100%;*/
+}
+
+/* ui-bootstrap pointer on hover */
+.nav, .pagination, .carousel, .panel-title a, li:hover, a:hover { cursor: pointer !important; }
