@@ -14,26 +14,27 @@
           <a class="navbar-brand">
             <img alt="Brand" src="imgs/toothlogo.png" class="brand-logo">
           </a>
-          <a class="navbar-brand">
+          <a class="navbar-brand" ng-click="setTab('clinic-scroll')">
             Lee Dental Group
           </a>
         </div>
         <ul class="nav navbar-nav navbar-right">
-          <li ng-click="setTab('about')" ng-class="{'active': activeTab == 'about'}"><a>About</a></li>
-          <li ng-click="setTab('contact')" ng-class="{'active': activeTab == 'contact'}"><a>Contact</a></li>
+          <li ng-click="setTab('about')"><a>About</a></li>
+          <li ng-click="setTab('contact')"><a>Contact</a></li>
         </ul>
       </div>
     </nav>
 
-    <div class="container" id="clinic-scroll">
-      <h1> what </h1>
-      <img class="clinic-img" src="http://lorempixel.com/1280/800/" du-parallax y="background" />
-      <h1>okay</h1>
-      <h1>yea</h1>
-      <img class="clinic-img" src="http://lorempixel.com/1280/801/" du-parallax y="background" />
-      <h1> what </h1>
-      <h1>lil jon</h1>
-      <img class="clinic-img" src="http://lorempixel.com/1280/600/" du-parallax y="background" />
+    <div class="container">
+      <div id="clinic-scroll">
+        <img class="clinic-img" src="http://lorempixel.com/1280/800/" du-parallax y="background" />
+      </div>
+      <div id="about">
+        <img class="clinic-img" src="http://lorempixel.com/1280/801/" du-parallax y="background" />
+      </div>
+      <div id="contact">
+        <img class="clinic-img" src="http://lorempixel.com/1280/600/" du-parallax y="background" />
+      </div>
     </div>
   </div>
 
