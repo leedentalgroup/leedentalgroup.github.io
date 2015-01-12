@@ -8,9 +8,9 @@ body {
 }
 
 nav {
-  -moz-box-shadow: 0 0 3px #333;
-  -webkit-box-shadow: 0 0 3px #333;
-  box-shadow: 0 0 3px #333;
+  -moz-box-shadow: 0 0 5px #333;
+  -webkit-box-shadow: 0 0 5px #333;
+  box-shadow: 0 0 5px #333;
   font-family: 'Roboto Slab', serif !important;
 }
 
@@ -31,7 +31,7 @@ div#clinic-scroll h1 {
 img.clinic-img {
   position: relative;
   z-index: -10;
-  max-width: 1140px;
+  width: 100%;
   /*max-width: 100%;*/
 }
 
