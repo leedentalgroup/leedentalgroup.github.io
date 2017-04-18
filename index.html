@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
     <meta charset="utf-8">
@@ -31,8 +30,23 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" integrity="sha384-0s5Pv64cNZJieYFkXYOTId2HMA2Lfb6q2nAcx2n0RTLUnCAoTTsS0nKEO27XyKcY" crossorigin="anonymous"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
     <![endif]-->
-
 </head>
+
+<style>
+  .google-maps {
+      position: relative;
+      padding-bottom: 75%; // This is the aspect ratio
+      height: 0;
+      overflow: hidden;
+  }
+  .google-maps iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100% !important;
+      height: 50% !important;
+  }
+</style>
 
 <body id="page-top" class="index">
 
@@ -188,7 +202,7 @@
                         <i class="fa fa-map-marker"></i>  28275 Orchard Lake Rd #100, Farmington Hills, MI 48334
                       </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 google-maps">
                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2941.417215100975!2d-83.36208178418552!3d42.503940979177386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824b097a5ddd78d%3A0xf133eaa9e2616475!2s28275+Orchard+Lake+Rd+%23100%2C+Farmington+Hills%2C+MI+48334!5e0!3m2!1sen!2sus!4v1492555857352" width="550" height="450" frameborder="0" style="border:0;border-radius:3px;" allowfullscreen></iframe>
                     </div>
                   </div>
