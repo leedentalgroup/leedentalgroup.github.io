@@ -242,6 +242,13 @@ section {
     }
 }
 
+// Special Section
+.guidelines {
+    h5, p {
+        padding: 10px !important;
+    }
+}
+
 // Services Section
 
 .service-heading {
@@ -506,6 +513,24 @@ section {
 }
 
 // Team Section
+
+.main-team-member {
+    text-align: center;
+    margin-bottom: 50px;
+    img {
+        margin: 0 auto;
+        border: 7px solid white;
+        width: 25%;
+    }
+    h4 {
+        margin-top: 25px;
+        margin-bottom: 0;
+        text-transform: none;
+    }
+    p {
+        margin-top: 0;
+    }
+}
 
 .team-member {
     text-align: center;
