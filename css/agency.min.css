@@ -235,6 +235,21 @@ section {
 .guidelines h5, .guidelines p {
   padding: 10px !important; }
 
+.btn-forms {
+  border-radius: 3px;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding: 15px 25px 15px 25px;
+  margin: 15px;
+  background-color: white;
+  color: #333; }
+
+.btn-active {
+  background-color: #18A1AF;
+  color: white; }
+
 .service-heading {
   margin: 15px 0;
   text-transform: none; }
