@@ -4,19 +4,14 @@ $(document).ready(function() {
   var year = today.getFullYear();
   yearElement.text(year);
 
-  // $('#english-form-btn').click(function(e) {
-  //   e.preventDefault();
-  //   $(this).addClass('btn-active');
-  //   $('#english-form-frame').show();
-  //   $('#korean-form-btn').removeClass('btn-active');
-  //   $('#korean-form-frame').hide();
-  // });
+  // var loadCounter = 0;
+  // var loaded = function() {
+  //   loadCounter += 1;
+  //   if (loadCounter === 2) {
+  //     var width = Math.floor(window.screen.width / 2.25);
+  //     $("iframe").attr("width", width + "px");
+  //   }
+  // };
 
-  // $('#korean-form-btn').click(function(e) {
-  //   e.preventDefault();
-  //   $(this).addClass('btn-active');
-  //   $('#korean-form-frame').show();
-  //   $('#english-form-btn').removeClass('btn-active');
-  //   $('#english-form-frame').hide();
-  // });
+
 });
