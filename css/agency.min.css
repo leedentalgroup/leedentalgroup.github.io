@@ -444,7 +444,7 @@ section {
   .main-team-member img {
     margin: 0 auto;
     border: 7px solid white;
-    /*width: 25%;*/ }
+    width: 55%; }
   .main-team-member h4 {
     margin-top: 25px;
     margin-bottom: 0;
