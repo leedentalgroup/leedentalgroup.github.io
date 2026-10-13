@@ -525,15 +525,16 @@ section { padding: 110px 0; }
 
 .doctor-card {
   display: grid;
-  grid-template-columns: 280px 1fr;
+  grid-template-columns: 260px 1fr;
   gap: 44px;
   align-items: center;
   padding: 40px;
   margin-bottom: 28px;
 }
+/* Oval frame showing the full 2:3 portrait, as on the original site */
 .doctor-card .portrait {
-  width: 280px;
-  height: 280px;
+  width: 260px;
+  height: 390px;
   border-radius: 50%;
   object-fit: cover;
   object-position: center top;
@@ -547,12 +548,13 @@ section { padding: 110px 0; }
 .credentials .fa { color: var(--teal); width: 18px; text-align: center; }
 
 .team-card { text-align: center; padding: 44px 28px; }
+/* Portrait-shaped oval (4:5) cropped from the landscape staff photos */
 .team-card .portrait {
   width: 200px;
-  height: 200px;
+  height: 250px;
   border-radius: 50%;
   object-fit: cover;
-  object-position: 50% 35%;
+  object-position: 50% 30%;
   border: 5px solid var(--white);
   box-shadow: var(--shadow);
   margin: 0 auto 20px;
@@ -701,21 +703,6 @@ footer .quicklinks a { color: rgba(255, 255, 255, 0.65); }
 footer .quicklinks a:hover { color: var(--white); }
 footer .quicklinks .fa-heart { color: var(--teal); }
 
-ul.social-buttons { margin: 0; padding: 0; list-style: none; display: flex; gap: 10px; }
-ul.social-buttons li a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.08);
-  color: var(--white);
-  font-size: 16px;
-  transition: background 0.2s, transform 0.2s;
-}
-ul.social-buttons li a:hover, ul.social-buttons li a:focus { background: var(--teal); transform: translateY(-2px); }
-
 /* --------------------------------------------------------------------------
    Responsive
    -------------------------------------------------------------------------- */
@@ -754,8 +741,8 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus { background: var(--t
   .about-text h2 { font-size: 28px; }
   .doctor-card { padding: 30px 22px; }
   .doctor-card h3 { font-size: 24px; }
-  .doctor-card .portrait { width: 220px; height: 220px; }
-  .team-card .portrait { width: 170px; height: 170px; }
+  .doctor-card .portrait { width: 200px; height: 300px; }
+  .team-card .portrait { width: 160px; height: 200px; }
   .contact-tiles { grid-template-columns: 1fr; }
   .contact-tile.wide { grid-column: auto; }
   .map-card iframe { height: 320px; }
