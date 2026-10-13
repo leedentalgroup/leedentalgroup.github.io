@@ -15,6 +15,18 @@ $(document).ready(function() {
       .toggleClass('is-closed', isClosed);
   }
 
+  // KakaoTalk tile: try to open the app via its URL scheme; if nothing
+  // handles it (typically desktop), fall back to the KakaoTalk website.
+  $('#kakao-tile').on('click', function() {
+    var fallback = this.getAttribute('data-fallback');
+    var started = Date.now();
+    setTimeout(function() {
+      if (!document.hidden && Date.now() - started < 2000) {
+        window.location.href = fallback;
+      }
+    }, 1200);
+  });
+
   // Collapse the mobile menu after tapping a quick-strip link
   $('.hero-strip a.page-scroll').on('click', function() {
     $('.navbar-collapse.in').collapse('hide');

@@ -628,6 +628,8 @@ section#contact .section-header .lead { color: rgba(255, 255, 255, 0.72); }
 }
 .contact-tile .tile-value { font-size: 17px; font-weight: 600; color: var(--white); word-break: break-word; }
 .contact-tile .tile-sub { display: block; font-size: 14px; color: rgba(255, 255, 255, 0.65); font-weight: 400; margin-top: 2px; }
+.contact-tile .tile-link { color: var(--teal); font-weight: 600; margin-top: 10px; }
+.contact-tile .tile-link .fa { display: inline; font-size: 12px; margin: 0 4px 0 0; }
 a.contact-tile:hover { background: rgba(24, 161, 175, 0.16); border-color: rgba(24, 161, 175, 0.5); transform: translateY(-3px); color: var(--white); }
 .contact-tile.wide { grid-column: span 2; }
 
