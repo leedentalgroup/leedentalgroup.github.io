@@ -1,17 +1,22 @@
 $(document).ready(function() {
-  var yearElement = $('#current-year');
+  // Footer copyright year
   var today = new Date();
-  var year = today.getFullYear();
-  yearElement.text(year);
+  $('#current-year').text(today.getFullYear());
 
-  // var loadCounter = 0;
-  // var loaded = function() {
-  //   loadCounter += 1;
-  //   if (loadCounter === 2) {
-  //     var width = Math.floor(window.screen.width / 2.25);
-  //     $("iframe").attr("width", width + "px");
-  //   }
-  // };
+  // Highlight today's row in the hours table and mirror it in the hero strip
+  var day = today.getDay(); // 0 = Sunday ... 6 = Saturday
+  var $row = $('.hours tr[data-day="' + day + '"]');
+  if ($row.length) {
+    $row.addClass('is-today');
+    var isClosed = $row.hasClass('closed');
+    var hours = $.trim($row.find('td').last().text());
+    $('#today-hours')
+      .text(isClosed ? 'Closed today' : hours)
+      .toggleClass('is-closed', isClosed);
+  }
 
-
+  // Collapse the mobile menu after tapping a quick-strip link
+  $('.hero-strip a.page-scroll').on('click', function() {
+    $('.navbar-collapse.in').collapse('hide');
+  });
 });

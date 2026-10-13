@@ -5,8 +5,9 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="author" content="">
+        <meta name="description" content="Lee Dental Group 이영주치과 is a family dental clinic in Farmington Hills, Michigan led by Dr. YoungJoo Oh Lee. Check-ups, cleanings, consultations and care for the whole family.">
+        <meta name="author" content="Lee Dental Group">
+        <meta name="theme-color" content="#18A1AF">
 
         <link rel="icon" type="image/png" href="img/logos/toothlogo.png">
         <title>Lee Dental Group 이영주치과</title>
@@ -14,60 +15,42 @@
         <!-- Bootstrap Core CSS -->
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-        <!-- Custom Fonts -->
+        <!-- Icons and Fonts -->
         <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-        <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700;800&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 
-        <!-- Theme CSS -->
-        <link href="css/agency.min.css" rel="stylesheet">
+        <!-- Site CSS -->
+        <link href="css/site.css" rel="stylesheet">
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" integrity="sha384-0s5Pv64cNZJieYFkXYOTId2HMA2Lfb6q2nAcx2n0RTLUnCAoTTsS0nKEO27XyKcY" crossorigin="anonymous"></script>
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
-            <![endif]-->
+        <![endif]-->
     </head>
-
-    <style>
-    .google-maps {
-        position: relative;
-        padding-bottom: 75%; // This is the aspect ratio
-        height: 0;
-        overflow: hidden;
-    }
-    .google-maps iframe {
-        position: absolute;
-        top: 5%;
-        left: 20%;
-        width: 60% !important;
-        height: 45% !important;
-    }
-    .form-group {
-        text-align: center;
-    }
-    </style>
-
-
 
     <body id="page-top" class="index">
 
         <!-- Navigation -->
         <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
             <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header page-scroll">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar-collapse" aria-controls="main-navbar-collapse" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars" aria-hidden="true"></i>
                     </button>
-                    <a class="navbar-brand page-scroll" href="#page-top">Lee Dental Group<span style="margin: auto 15px;"></span>이영주치과</a>
+                    <a class="navbar-brand page-scroll" href="#page-top">
+                        <span class="brand-logo"><img src="img/logos/toothlogo.png" alt=""></span>
+                        <span class="brand-text">
+                            <span>Lee Dental Group</span>
+                            <span class="brand-ko" lang="ko">이영주치과</span>
+                        </span>
+                    </a>
                 </div>
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="collapse navbar-collapse" id="main-navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="hidden">
                             <a href="#page-top"></a>
@@ -84,75 +67,153 @@
                         <li>
                             <a class="page-scroll" href="#contact">Contact Us</a>
                         </li>
+                        <li class="nav-cta">
+                            <a href="tel:+13137312875"><i class="fa fa-phone" aria-hidden="true"></i> 313-731-2875</a>
+                        </li>
                     </ul>
                 </div>
-                <!-- /.navbar-collapse -->
             </div>
-            <!-- /.container-fluid -->
         </nav>
 
         <!-- Header -->
-        <header style="padding-bottom:50px;">
+        <header class="hero">
             <div class="container">
-                <div class="intro-text">
-                    <div class="intro-lead-in">Welcome to Lee Dental Group<br>이영주치과</div>
-                    <div class="intro-heading">Michigan's<br> Family Dental Clinic</div>
-                    <a href="#special-alert" class="page-scroll btn btn-xl">Learn More</a>
+                <div class="hero-content">
+                    <span class="eyebrow">Welcome to Lee Dental Group <span lang="ko">이영주치과</span></span>
+                    <h1>Michigan's <span>Family</span><br>Dental Clinic</h1>
+                    <p class="hero-lead">Gentle, personal dental care for the whole family in Farmington Hills, led by Dr. YoungJoo Oh Lee. Our team speaks your language, in English, Korean and more.</p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="page-scroll btn btn-primary btn-lg"><i class="fa fa-calendar-check-o" aria-hidden="true"></i>Book an Appointment</a>
+                        <a href="#special-alert" class="page-scroll btn btn-outline-light btn-lg">Learn More</a>
+                    </div>
                 </div>
             </div>
         </header>
 
+        <!-- Quick info strip -->
+        <div class="hero-strip">
+            <div class="container">
+                <div class="strip">
+                    <a class="strip-item" href="tel:+13137312875">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <span>
+                            <span class="strip-label">Call us</span>
+                            <span class="strip-value">313-731-2875</span>
+                        </span>
+                    </a>
+                    <a class="strip-item page-scroll" href="#contact">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        <span>
+                            <span class="strip-label">Hours today</span>
+                            <span class="strip-value" id="today-hours">See our hours</span>
+                        </span>
+                    </a>
+                    <a class="strip-item page-scroll" href="#contact">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <span>
+                            <span class="strip-label">Visit us</span>
+                            <span class="strip-value">28275 Orchard Lake Rd #100, Farmington Hills</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
         <!-- Special Alert Section -->
         <section id="special-alert" class="bg-light-gray">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center" style="margin-bottom: -5%;">
-                        <h2 class="section-heading">COVID-19 Safety</h2>
-                        <h3 class="section-subheading text-muted">With the on-going COVID-19 global pandemic, our clinic has been working hard to follow the guidelines provided by the ADA, CDC, and WHO.<br><br>The health and safety of our staff and patients are our top priorities as we get ready to reopen in June 2020.<br><br>We thank you all in advance for your cooperation, understanding, and patience as we maneuver through this pandemic together.<br><br>With that in mind, here are some guidelines and changes we have implemented at our clinic:</h3>
+                <div class="section-header">
+                    <span class="eyebrow">Your safety first</span>
+                    <h2>COVID-19 Safety</h2>
+                    <p class="lead">Since the COVID-19 pandemic, our clinic has followed the guidelines provided by the ADA, CDC and WHO. The health and safety of our staff and patients are our top priorities, and have been since we reopened in June 2020.</p>
+                    <p class="lead">We thank you in advance for your cooperation, understanding and patience as we work through this together. Here are the guidelines and changes we have implemented at our clinic:</p>
+                </div>
+
+                <div class="grid grid-2">
+                    <div class="card">
+                        <div class="card-title-row">
+                            <span class="icon-badge"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></span>
+                            <h3>Before your visit</h3>
+                        </div>
+                        <ul class="checklist">
+                            <li>
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                                <span>
+                                    <span class="en">Please bring your own pens to avoid unnecessary contact.</span>
+                                    <span class="ko" lang="ko">오실때 불필요한 접촉을 피하기 위하여 환자 본인의 필기도구를 가져오세요.</span>
+                                </span>
+                            </li>
+                            <li>
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                                <span>
+                                    <span class="en">A mask is highly recommended for public safety.</span>
+                                    <span class="ko" lang="ko">서로의 안전을 위하여 마스크 착용은 꼭 하시기 바랍니다.</span>
+                                </span>
+                            </li>
+                            <li>
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                                <span>
+                                    <span class="en">We limit access to the office to the patient only, whenever possible.</span>
+                                    <span class="ko" lang="ko">보호자가 필요한 환자를 제외하고는 환자 본인만 들어오시기 바랍니다.</span>
+                                </span>
+                            </li>
+                            <li>
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                                <span>
+                                    <span class="en">We check body temperature before any procedure.</span>
+                                    <span class="ko" lang="ko">진료 시작전 체온 측정이 있습니다.</span>
+                                </span>
+                            </li>
+                            <li>
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                                <span>
+                                    <span class="en">Please report any signs or symptoms of COVID-19 within the next 14 days.</span>
+                                    <span class="ko" lang="ko">진료후 14일 이내에 코로나 바이러스 증상이 있으신 경우 꼭 연락해 주십시요.</span>
+                                </span>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="row text-center">
-                        <div class="col-md-12 col-xs-12">
-                            <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                <i class="fa fa-exclamation-triangle fa-stack-1x fa-inverse"></i>
-                            </span>
-                            <h4 class="service-heading">COVID-19 Guidelines and Changes</h4>
-                            <div class="text-muted guidelines">
-                                <h5>Please bring your own pens to avoid unnecessary contacts.<br>오실때 불필요한 접촉을 피하기 위하여 환자 본인의 필기도구를 가져오세요.</h5>
-                                <h5>A mask is highly recommended for public safety.<br>서로의 안전을 위하여 마스크 착용은 꼭 하시기 바랍니다.</h5>
-                                <h5>We limit access to the office to the patient only when possible.<br>  보호자가 필요한 환자를 제외하고는 환자 본인만 들어오시기 바랍니다.</h5>
-                                <h5>We check body temperature before any procedures.<br>진료 시작전 체온 측정이 있습니다.</h5>
-                                <h5>Please report any signs or symptoms of COVID-19 within next 14 days.<br>진료후14일 이내에 코로나 바이러스 증상이 있으신 경우 꼭 연락해 주십시요.</h5>
-                            </div>
-                            <div class="text-muted">
-                                <p>With limited staff, please be patient with any waiting times</p>
-                                <p>Our clinic has installed glass panels around the reception area</p>
-                                <p>Our staff members will be provided with extra protective gear</p>
-                                <p>Our clinic has provided an abundance of hand sanitizer and thorough cleanings prior to each business day</p>
-                            </div>
+
+                    <div class="card">
+                        <div class="card-title-row">
+                            <span class="icon-badge soft"><i class="fa fa-shield" aria-hidden="true"></i></span>
+                            <h3>What we've changed at the clinic</h3>
                         </div>
-                        <div class="col-md-12 col-xs-12">
-                            <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                <i class="fa fa-file-text-o fa-stack-1x fa-inverse"></i>
-                            </span>
-                            <h4 class="service-heading section-heading">Please Complete the Form Below</h4>
-                            <p class="text-muted">To protect our staff and patients during the COVID-19 pandemic, all individuals entering the clinic must fill out the form below.</p>
-                        </div>
-                        <div class="col-md-12 col-xs-12" id="english-form-frame">
-                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfzVYdrYQbd_Mlz91hbcyyAGpFJcwUqYXj4VdJlQ6QSOZ0eZQ/viewform?embedded=true" width="100%" height="2220" frameborder="0" marginheight="0" marginwidth="0">Loading COVID-19: Self-Certification...</iframe>
-                        </div>
-                        <div class="col-md-12 col-xs-12 text-muted">
-                            <div class="col-md-2 col-xs-2"></div>
-                            <div class="col-md-8 col-xs-8">
-                                <h5>Copyright &copy;Lee Dental Group 이영주치과: 상기 질문 사항은 American Dental Association 의 안내를 따라 작성되었습니다.</h5>
-                                <br>
-                                <h5>If you answered "YES" to any of these questions, it would likely indicate a deeper discussion with the dentist before proceeding with elective dental treatment.</h5>
-                                <br>
-                                <h5>위의 질문사항에 “Yes” 라고 답변이 있으시면 진료 시작전 선생님과 상담이 있을 수 있습니다.</h5>
-                            </div>
-                            <div class="col-md-2 col-xs-2"></div>
-                        </div>
+                        <ul class="checklist">
+                            <li>
+                                <i class="fa fa-user-md" aria-hidden="true"></i>
+                                <span class="en">With limited staff, please be patient with any waiting times.</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-square-o" aria-hidden="true"></i>
+                                <span class="en">Our clinic has installed glass panels around the reception area.</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-medkit" aria-hidden="true"></i>
+                                <span class="en">Our staff members are provided with extra protective gear.</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-tint" aria-hidden="true"></i>
+                                <span class="en">Our clinic provides an abundance of hand sanitizer and performs thorough cleanings before each business day.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card form-card">
+                    <span class="icon-badge"><i class="fa fa-file-text-o" aria-hidden="true"></i></span>
+                    <h3>Please Complete the Form Below</h3>
+                    <p class="lead">To protect our staff and patients during the COVID-19 pandemic, all individuals entering the clinic must fill out the self-certification form below.</p>
+                    <a class="btn btn-primary btn-lg form-toggle" data-toggle="collapse" href="#english-form-frame" role="button" aria-expanded="false" aria-controls="english-form-frame">
+                        Open the self-certification form <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    </a>
+                    <div class="collapse form-frame" id="english-form-frame">
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfzVYdrYQbd_Mlz91hbcyyAGpFJcwUqYXj4VdJlQ6QSOZ0eZQ/viewform?embedded=true" width="100%" height="2220" frameborder="0" marginheight="0" marginwidth="0" loading="lazy" title="COVID-19 Self-Certification form">Loading COVID-19: Self-Certification...</iframe>
+                    </div>
+                    <div class="form-notes">
+                        <p>Copyright &copy; Lee Dental Group <span lang="ko">이영주치과</span>: <span lang="ko">상기 질문 사항은 American Dental Association 의 안내를 따라 작성되었습니다.</span></p>
+                        <p>If you answered "YES" to any of these questions, it would likely indicate a deeper discussion with the dentist before proceeding with elective dental treatment.</p>
+                        <p lang="ko">위의 질문사항에 “Yes” 라고 답변이 있으시면 진료 시작전 선생님과 상담이 있을 수 있습니다.</p>
                     </div>
                 </div>
             </div>
@@ -161,36 +222,27 @@
         <!-- Services Section -->
         <section id="services">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="section-heading">Services</h2>
-                        <h3 class="section-subheading text-muted">Located in Farmington Hills, Michigan our top-notch clinic will provide you with the best dental care for you and your family.<br><br>With a diverse staff fluent in over four languages, our clinic implements the latest best practices, state-of-the-art facilities, and a personal connection with our services.</h3>
-                    </div>
+                <div class="section-header">
+                    <span class="eyebrow">What we do</span>
+                    <h2>Services</h2>
+                    <p class="lead">Located in Farmington Hills, Michigan, our top-notch clinic will provide you with the best dental care for you and your family.</p>
+                    <p class="lead">With a diverse staff fluent in over four languages, our clinic implements the latest best practices, state-of-the-art facilities, and a personal connection with our services.</p>
                 </div>
-                <div class="row text-center">
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fa fa-check fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="service-heading">Check Up</h4>
-                        <p class="text-muted">Whether you are a new patient looking for a clinic or returning as part of our patient family, our clinic provides regular check ups, cleanings, operations and more.</p>
+                <div class="grid grid-3">
+                    <div class="card card-hover service-card">
+                        <span class="icon-badge"><i class="fa fa-check" aria-hidden="true"></i></span>
+                        <h3>Check Up</h3>
+                        <p>Whether you are a new patient looking for a clinic or returning as part of our patient family, our clinic provides regular check ups, cleanings, operations and more.</p>
                     </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fa fa-user-md fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="service-heading">Consultation</h4>
-                        <p class="text-muted">Our professional team led by Dr. YoungJoo Lee D.D.S., provides personal consultation services to ensure you are getting the best dental treatment possible.</p>
+                    <div class="card card-hover service-card">
+                        <span class="icon-badge"><i class="fa fa-user-md" aria-hidden="true"></i></span>
+                        <h3>Consultation</h3>
+                        <p>Our professional team, led by Dr. YoungJoo Lee D.D.S., provides personal consultation services to ensure you are getting the best dental treatment possible.</p>
                     </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fa fa-heart fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="service-heading">Care</h4>
-                        <p class="text-muted">Our clinic cares about your dental health and hygiene more than anything else. Sign up for an appointment to care for your pearly whites and gums.</p>
+                    <div class="card card-hover service-card">
+                        <span class="icon-badge"><i class="fa fa-heart" aria-hidden="true"></i></span>
+                        <h3>Care</h3>
+                        <p>Our clinic cares about your dental health and hygiene more than anything else. Sign up for an appointment to care for your pearly whites and gums.</p>
                     </div>
                 </div>
             </div>
@@ -199,49 +251,56 @@
         <!-- Team Section -->
         <section id="team" class="bg-light-gray">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="section-heading">The Team</h2>
-                        <h3 class="section-subheading text-muted">Founded in 2009, by Dr. YoungJoo Oh Lee, Lee Dental Group 이영주치과 was created to become the premiere clinic for Korean-American families and more in Southeast Michigan.<br><br>Growing our patient basis each year, Lee Dental Group 이영주치과 has now become the dental home for hundreds of families in the area, in and out of the Korean-American community.<br><br>With Dr. Lee's education from Seoul National University and the University of Michigan Dental School, her knowlege and continued learning will ensure you are treated with the latest and greatest dental practices.</h3>
+                <div class="about">
+                    <div class="about-image">
+                        <img src="img/about/reception.jpg" alt="The reception area at Lee Dental Group">
+                        <div class="about-badge">
+                            <strong>2009</strong>
+                            <span>Est. Farmington Hills</span>
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <span class="eyebrow">Our story</span>
+                        <h2>The Team</h2>
+                        <p>Founded in 2009 by Dr. YoungJoo Oh Lee, Lee Dental Group <span lang="ko">이영주치과</span> was created to become the premiere clinic for Korean-American families and more in Southeast Michigan.</p>
+                        <p>Growing our patient base each year, Lee Dental Group <span lang="ko">이영주치과</span> has now become the dental home for hundreds of families in the area, in and out of the Korean-American community.</p>
+                        <p>With Dr. Lee's education from Seoul National University and the University of Michigan School of Dentistry, her knowledge and continued learning will ensure you are treated with the latest and greatest dental practices.</p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-12 col-xs-12">
-                        <div class="main-team-member">
-                            <img src="img/team/yjlee.jpg" class="img-responsive img-circle" alt="">
-                            <h4>Dr. YoungJoo Oh Lee</h4>
-                            <p class="text-muted">Seoul National University</p>
-                            <p class="text-muted">University of Michigan Prosthodontics</p>
-                        </div>
+
+                <div class="card doctor-card">
+                    <img src="img/team/yjlee.jpg" class="portrait" alt="Dr. YoungJoo Oh Lee">
+                    <div>
+                        <h3>Dr. YoungJoo Oh Lee</h3>
+                        <div class="role">Founder &amp; Dentist, D.D.S.</div>
+                        <ul class="credentials">
+                            <li><i class="fa fa-graduation-cap" aria-hidden="true"></i> Seoul National University</li>
+                            <li><i class="fa fa-graduation-cap" aria-hidden="true"></i> University of Michigan Prosthodontics</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-sm-4">
-                        <div class="team-member">
-                            <img src="img/team/manager.jpg" class="img-responsive img-circle" alt="">
-                            <h4>GeeSook Park Baker</h4>
-                            <p class="text-muted">Office Manager</p>
-                        </div>
+
+                <div class="grid grid-3">
+                    <div class="card card-hover team-card">
+                        <img src="img/team/manager.jpg" class="portrait" alt="GeeSook Park Baker">
+                        <h4>GeeSook Park Baker</h4>
+                        <p>Office Manager</p>
                     </div>
-                    <div class="col-sm-4">
-                        <div class="team-member">
-                            <img src="img/team/mrpark.jpg" class="img-responsive img-circle" alt="">
-                            <h4>HyunWoo "Shawn" Park</h4>
-                            <p class="text-muted">Dental Hygienist</p>
-                        </div>
+                    <div class="card card-hover team-card">
+                        <img src="img/team/mrpark.jpg" class="portrait" alt="HyunWoo Shawn Park">
+                        <h4>HyunWoo "Shawn" Park</h4>
+                        <p>Dental Hygienist</p>
                     </div>
-                    <div class="col-sm-4">
-                        <div class="team-member">
-                            <img src="img/team/kristiana.jpg" class="img-responsive img-circle" alt="">
-                            <h4>Cristiana Urs</h4>
-                            <p class="text-muted">Dental Hygienist</p>
-                        </div>
+                    <div class="card card-hover team-card">
+                        <img src="img/team/kristiana.jpg" class="portrait" alt="Cristiana Urs">
+                        <h4>Cristiana Urs</h4>
+                        <p>Dental Hygienist</p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 text-center">
-                        <p class="large text-muted">Our staff comes from all parts of the world and brings a diverse understanding and culture to the Lee Dental Group 이영주치과 clinic.<br><br>Our network of connected professionals will meet all your dental health needs and more!</p>
-                    </div>
+
+                <div class="team-note">
+                    <p>Our staff comes from all parts of the world and brings a diverse understanding and culture to the Lee Dental Group <span lang="ko">이영주치과</span> clinic.</p>
+                    <p>Our network of connected professionals will meet all your dental health needs and more!</p>
                 </div>
             </div>
         </section>
@@ -249,87 +308,72 @@
         <!-- Contact Section -->
         <section id="contact">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="section-heading">Contact Us</h2>
-                        <h3 class="section-subheading text-muted" style="color:#fff;">Feel free to email or call us and our staff will personally get in touch with you!<br><br>We look forward to becoming your family's dental clinic!</h3>
+                <div class="section-header">
+                    <span class="eyebrow">Get in touch</span>
+                    <h2>Contact Us</h2>
+                    <p class="lead">Feel free to email or call us and our staff will personally get in touch with you. We look forward to becoming your family's dental clinic!</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-tiles">
+                        <a class="contact-tile" href="tel:+13137312875">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            <span class="tile-label">Phone</span>
+                            <span class="tile-value">313-731-2875</span>
+                        </a>
+                        <div class="contact-tile">
+                            <i class="fa fa-comment" aria-hidden="true"></i>
+                            <span class="tile-label">Kakao Talk</span>
+                            <span class="tile-value">734-352-0222<span class="tile-sub">ID: LeeDental</span></span>
+                        </div>
+                        <a class="contact-tile" href="mailto:yleedentist@gmail.com" target="_blank" rel="noopener">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <span class="tile-label">Email</span>
+                            <span class="tile-value">yleedentist@gmail.com</span>
+                        </a>
+                        <a class="contact-tile" href="https://www.google.com/maps/dir/?api=1&destination=28275+Orchard+Lake+Rd+%23100%2C+Farmington+Hills%2C+MI+48334" target="_blank" rel="noopener">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <span class="tile-label">Address</span>
+                            <span class="tile-value">28275 Orchard Lake Rd #100<span class="tile-sub">Farmington Hills, MI 48334</span></span>
+                        </a>
+                    </div>
+
+                    <div class="hours-card">
+                        <h3><i class="fa fa-clock-o" aria-hidden="true"></i> Hours</h3>
+                        <table class="hours">
+                            <tbody>
+                                <tr class="closed" data-day="1"><td>Monday</td><td>Closed</td></tr>
+                                <tr data-day="2"><td>Tuesday</td><td>9:00am – 7:00pm</td></tr>
+                                <tr data-day="3"><td>Wednesday</td><td>10:00am – 6:00pm</td></tr>
+                                <tr data-day="4"><td>Thursday</td><td>9:00am – 7:00pm</td></tr>
+                                <tr class="closed" data-day="5"><td>Friday</td><td>Closed</td></tr>
+                                <tr data-day="6"><td>Saturday</td><td>9:00am – 7:00pm</td></tr>
+                                <tr data-day="0"><td>Sunday</td><td>9:00am – 6:00pm</td></tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group" style="padding:10px;font-size:20pt;color:#fff;">
-                                    <b>PHONE</b>
-                                    <br>
-                                    313-731-2875
-                                </div>
-                                <div class="form-group" style="padding:10px;font-size:20pt;color:#fff;">
-                                    <b>KAKAO TALK</b>
-                                    <br>
-                                    734-352-0222
-                                    <br>
-                                    ID: LeeDental
-                                </div>
-                                <div class="form-group" style="padding:10px;font-size:20pt;color:#fff;">
-                                    <b>EMAIL</b><br>
-                                    <a style="color:#fff;" href="mailto:yleedentist@gmail.com" target="_blank">yleedentist@gmail.com</a>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group" style="padding:10px;font-size:20pt;color:#fff;">
-                                    <b>HOURS</b><br>
-                                    <span style="color: #aaa;">Mon: CLOSED</span> <br>
-                                    Tue: 09:00am - 07:00pm <br>
-                                    Wed: 10:00am - 06:00pm <br>
-                                    Thu: 09:00am - 07:00pm <br>
-                                    <span style="color: #aaa;">Fri: CLOSED</span> <br>
-                                    Sat: 09:00am - 07:00pm <br>
-                                    Sun: 09:00am - 06:00pm
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12">
-                        <div class="row">
-                            <div class="form-group" style="padding:10px;font-size:20pt;color:#fff;">
-                                <b>ADDRESS</b><br>
-                                28275 Orchard Lake Rd #100, Farmington Hills, MI 48334
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="google-maps">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2941.417215100975!2d-83.36208178418552!3d42.503940979177386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824b097a5ddd78d%3A0xf133eaa9e2616475!2s28275+Orchard+Lake+Rd+%23100%2C+Farmington+Hills%2C+MI+48334!5e0!3m2!1sen!2sus!4v1492555857352" frameborder="0" style="border:0;border-radius:3px;" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                    </div>
-                 </div>
+
+                <div class="map-card">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2941.417215100975!2d-83.36208178418552!3d42.503940979177386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824b097a5ddd78d%3A0xf133eaa9e2616475!2s28275+Orchard+Lake+Rd+%23100%2C+Farmington+Hills%2C+MI+48334!5e0!3m2!1sen!2sus!4v1492555857352" frameborder="0" allowfullscreen loading="lazy" title="Map to Lee Dental Group, 28275 Orchard Lake Rd #100, Farmington Hills, MI 48334"></iframe>
+                </div>
             </div>
         </section>
 
         <footer>
             <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <span class="copyright">
-                            Copyright &copy; Lee Dental Group 이영주치과 2009-<span id="current-year"></span>
-                        </span>
-                    </div>
-                    <div class="col-md-4">
-                        <ul class="list-inline quicklinks">
-                            <li><a href="https://github.com/pjwl33" target="_blank">Made with <span class="fa fa-heart"></span> by PJWL</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <ul class="list-inline social-buttons">
-                            <li><a target="_blank" href="https://www.instagram.com/paul.jw.lee/"><i class="fa fa-instagram"></i></a>
-                            </li>
-                            <li><a target="_blank" href="https://www.facebook.com/pjwlee"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a target="_blank" href="https://www.linkedin.com/in/pauljwlee/"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="footer-row">
+                    <span class="copyright">
+                        Copyright &copy; Lee Dental Group <span lang="ko">이영주치과</span> 2009-<span id="current-year"></span>
+                    </span>
+                    <ul class="quicklinks">
+                        <li><a href="https://github.com/pjwl33" target="_blank" rel="noopener">Made with <span class="fa fa-heart" aria-hidden="true"></span> by PJWL</a></li>
+                    </ul>
+                    <ul class="social-buttons">
+                        <li><a target="_blank" rel="noopener" href="https://www.instagram.com/paul.jw.lee/" aria-label="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a target="_blank" rel="noopener" href="https://www.facebook.com/pjwlee" aria-label="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a target="_blank" rel="noopener" href="https://www.linkedin.com/in/pauljwlee/" aria-label="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                    </ul>
                 </div>
             </div>
         </footer>
