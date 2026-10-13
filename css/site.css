@@ -525,15 +525,15 @@ section { padding: 110px 0; }
 
 .doctor-card {
   display: grid;
-  grid-template-columns: 220px 1fr;
-  gap: 40px;
+  grid-template-columns: 280px 1fr;
+  gap: 44px;
   align-items: center;
   padding: 40px;
   margin-bottom: 28px;
 }
 .doctor-card .portrait {
-  width: 220px;
-  height: 220px;
+  width: 280px;
+  height: 280px;
   border-radius: 50%;
   object-fit: cover;
   object-position: center top;
@@ -546,11 +546,10 @@ section { padding: 110px 0; }
 .credentials li { display: flex; align-items: center; gap: 12px; color: var(--muted); padding: 6px 0; }
 .credentials .fa { color: var(--teal); width: 18px; text-align: center; }
 
-.team-grid { max-width: 760px; margin: 0 auto; }
-.team-card { text-align: center; padding: 36px 28px; }
+.team-card { text-align: center; padding: 44px 28px; }
 .team-card .portrait {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
   object-position: 50% 35%;
@@ -755,6 +754,8 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus { background: var(--t
   .about-text h2 { font-size: 28px; }
   .doctor-card { padding: 30px 22px; }
   .doctor-card h3 { font-size: 24px; }
+  .doctor-card .portrait { width: 220px; height: 220px; }
+  .team-card .portrait { width: 170px; height: 170px; }
   .contact-tiles { grid-template-columns: 1fr; }
   .contact-tile.wide { grid-column: auto; }
   .map-card iframe { height: 320px; }
